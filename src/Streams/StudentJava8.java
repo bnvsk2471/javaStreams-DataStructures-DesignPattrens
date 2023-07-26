@@ -30,5 +30,7 @@ public class StudentJava8 {
 				.collect(Collectors.toMap(StudentEntity::getAge, StudentEntity::getName));
 		map.forEach((x, y) -> System.out.println(x + y));
 	}
+	
+	List<StudentObj> list=Arrays.asList();
 
 }
