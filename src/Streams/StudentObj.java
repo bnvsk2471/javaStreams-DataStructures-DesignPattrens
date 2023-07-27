@@ -55,6 +55,11 @@ public class StudentObj {
 	public void setage(Integer age) {
 		this.age=age;
 	}
+	@Override
+	public String toString() {
+		return "StudentObj [Id=" + Id + ", firstName=" + firstName + ", lastName=" + lastName + ", Gender=" + Gender
+				+ ", age=" + age + "]";
+	}
 	
 
 }
