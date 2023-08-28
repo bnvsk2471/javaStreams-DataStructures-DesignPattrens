@@ -1,5 +1,0 @@
-package FACTORY_CREATIONALDESIGNPATTREN;
-
-public class FACTORY {
-
-}

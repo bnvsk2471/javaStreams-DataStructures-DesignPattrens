@@ -1,14 +1,11 @@
 package Streams;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.OptionalDouble;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import StreamsEntity.StudentEntity;
 
@@ -68,10 +65,10 @@ public class StudentJava8 {
 		   System.out.println(gendercount);
 		   
 		   //Can you find the oldest student in the list
-		   Optional<StudentObj> oldStudent=list2.stream().max(Comparator.comparing(StudentObj::getGender));
-		   System.out.println(oldStudent);
+		   Optional<StudentObj> oldStudent=list2.stream().max(Comparator.comparing(StudentObj::getage));
+		   System.out.println("old:  "+oldStudent);
 		   
-		   //How would you create a new list of students sorted by age in ascending order
+		 //How would you create a new list of students sorted by age in ascending order
 	       List<StudentObj> sortedbyage=list2.stream().
 	    		   sorted(Comparator.comparingInt(StudentObj::getage)).
 	    		   collect(Collectors.toList());

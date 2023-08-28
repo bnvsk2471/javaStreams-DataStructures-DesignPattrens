@@ -18,6 +18,7 @@ public class BinaryTest {
 		
 		System.out.println("In-Order Traversal:");
         tree.inOrderTraversal();
+        ///kjf
 	}
 
 }
